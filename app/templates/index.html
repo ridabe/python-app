@@ -1,0 +1,13 @@
+{% extends "layout.html" %}
+
+{% block title %}{{ super() }} - Index {% endblock %}
+
+{% block content %}
+<div class="container text-center">
+    <div class="row align-items-baseline">
+        <div class="col-12">
+            <img src={{ url_for('static', filename='image/capa.png') }} class="figure-img img-fluid rounded" alt="...">
+        </div>
+    </div>
+</div>
+{% endblock %}
