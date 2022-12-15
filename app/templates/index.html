@@ -1,0 +1,43 @@
+{% extends "layout.html" %}
+
+{% block title %}{{ super() }} - Index {% endblock %}
+
+{% block content %}
+<div id="content-wrapper" class="d-flex flex-column bg-gradient-primary">
+    <div class="row align-items-baseline">
+        <div class="col-12">
+            <img src={{ url_for('static', filename='image/capa.png') }} class="figure-img img-fluid rounded" alt="...">
+        </div>
+    </div>
+    <div class="col-lg-6 mb-4"></div>
+
+        <div class="card shadow mb-4">
+            <div class="card-header py-3">
+                <h6 class="m-0 font-weight-bold text-primary">Objetivo</h6>
+            </div>
+            <div class="card-body bg-gradient-info text-gray-100">
+                <div class="text-center">
+                    <img class="img-fluid px-3 px-sm-4 mt-3 mb-4" style="width: 25rem;"
+                        src="{{ url_for('static', filename= 'img/undraw_posting_photo.svg') }}" alt="...">
+                </div>
+                <p>O objetivo deste sistema e cadastrar e disponibilizar todos os sistemas criados pela Algoritmum,
+                     a medida com que forem sendo realizados os exercicios em <b> Python</b> estarão sendo
+                    disponibilzados neste <b>catálogo de software.</b></p>
+                
+            </div>
+        </div>
+        <div class="card shadow mb-4">
+            <div class="card-header py-3">
+                <h6 class="m-0 font-weight-bold text-primary">Sobre o Aluno</h6>
+            </div>
+            <div class="card-body bg-gradient-info text-gray-100 ">
+                <p>Ricardo Bene atualmente atua como desenvolvedor Php, tem experiencia de 12 anos 
+                    como desenvolvedor de sistemas. Buscando novos horizontes
+                    em sua carreira esta partindo para o <b>Python</b>.
+                </p>
+            </div>
+        </div>
+
+    </div>    
+</div>
+{% endblock %}
